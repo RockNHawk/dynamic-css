@@ -125,12 +125,6 @@
     <Content Include="mouse-follow.html" />
     <Content Include="jquery.js" />
     <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="avalon.dynamiccss.ts" />
