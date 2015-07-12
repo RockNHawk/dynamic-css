@@ -2,6 +2,7 @@
 
 ## dynamic-css 初次开源，大家多多提意见 :-)
 
+* 基于 avalon js （http://avalonjs.github.io/）
 * 使得你可以借助 MVVM 模式动态生成和更新 css，从而将本插件到来之前，打散、嵌套在 js 中的修改样式的代码剥离出来。
 * 一些原本需要复杂的 js 判断的动态 css，用 dynamic css 表达式几行代码搞定。
 * 实际项目中复杂布局的情况下有用。
