@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="jquery.js"></script>
     <script src="avalon.shim.js"></script>
-    <script src="avalon.dynamiccss.js"></script>
-    <script src="layout.js"></script>
+    <script src="rhythm.avalon.dynamicstyle.js"></script>
+    <script src="rhythm.avalon.dynamicstyle.helper.js"></script>
 </head>
 <body>
 
@@ -27,11 +27,11 @@
             height:9000px;
         }
     </style>
-    <style type="text/dynamiccss" ms-controller="layout" ms-dynamiccss>
+    <script type="text/dynamicstyle" ms-controller="dynamicStyle" ms-dynamicstyle>
         .content-sum {
             display:{{layout.doc.scrollTop > 135 ? "block" : "none"}}; /* 这里面可以写 js 代码，可以调用 js 方法，基本无限制 */
         }
-    </style>
+    </script>
 
     <b>往下滚动试试</b>
 

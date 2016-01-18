@@ -1,0 +1,6 @@
+﻿ 
+  .out-dynamic-class-mouse-follow {
+            position: absolute;
+            top:{{layout.mouse.pageY}}px;
+            left:{{layout.mouse.pageX}}px;
+        }

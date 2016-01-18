@@ -7,19 +7,33 @@
 
     <script src="jquery.js"></script>
     <script src="avalon.shim.js"></script>
-    <script src="avalon.dynamiccss.js"></script>
-    <script src="layout.js"></script>
+    <script src="rhythm.avalon.dynamicstyle.js"></script>
+    <script src="rhythm.avalon.dynamicstyle.helper.js"></script>
 </head>
 <body>
-    <style type="text/dynamiccss" ms-controller="layout" ms-dynamiccss>
-        .mouse-follow {
+    <fieldset>
+        <legend>外部样式</legend>
+        <script type="text/dynamicstyle" ms-controller="dynamicStyle" ms-dynamicstyle-url="mouse-follow.txt">
+        </script>
+        <div class="out-dynamic-class-mouse-follow">为什么追我&nbsp;&nbsp;&nbsp;3</div>
+    </fieldset>
+
+    <fieldset>
+        <legend>内联样式</legend>
+        <script type="text/dynamicstyle" ms-controller="dynamicStyle" ms-dynamicstyle>
+            .inline-dynamic-class-mouse-follow {
             position: absolute;
             top:{{layout.mouse.pageY}}px;
             left:{{layout.mouse.pageX}}px;
-        }
-    </style>
+            }
+        </script>
+        <div class="inline-dynamic-class-mouse-follow">为什么追我 1</div>
+    </fieldset>
 
-    <div class="mouse-follow">为什么追我</div>
+    <fieldset>
+        <legend>行内样式</legend>
+        <div class="div1" ms-controller="dynamicStyle" ms-dynamicstyle-style="position: absolute;top:{{layout.mouse.pageY}}px;left:{{layout.mouse.pageX}}px;">为什么追我&nbsp;&nbsp;2</div>
+    </fieldset>
 
 </body>
 </html>

@@ -117,8 +117,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="layout.js" />
-    <Content Include="avalon.dynamiccss.js" />
+    <Content Include="rhythm.avalon.dynamicstyle.helper.js" />
+    <Content Include="rhythm.avalon.dynamicstyle.js" />
     <Content Include="avalon.shim.js" />
     <Content Include="index.html" />
     <Content Include="scroll-trigger.html" />
@@ -127,11 +127,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="avalon.dynamiccss.ts" />
     <TypeScriptCompile Include="jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="avalon.dynamiccss.js.map" />
+    <Content Include="mouse-follow.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
